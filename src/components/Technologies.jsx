@@ -1,6 +1,6 @@
 import { FaNodeJs } from "react-icons/fa"
 import { RiJavaFill, RiReactjsLine } from "react-icons/ri"
-import { SiAngular, SiJavascript, SiMongodb, SiPython } from "react-icons/si"
+import { SiAngular, SiJavascript, SiMongodb, SiPython, SiPhp, SiMysql } from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
 import { animate, motion } from "framer-motion";
 
@@ -79,6 +79,21 @@ const Technologies = () => {
                 variants={iconVariants(6)}
                 className="p-4">
                 <SiPython className="text-7xl text-[#3776AB]" />
+            </motion.div>
+            <motion.div
+                initial="initial"
+                animate="animate"
+                variants={iconVariants(4)}
+                className="p-4">
+                <SiPhp className="text-7xl text-[#777BB4]" />
+            </motion.div>
+
+            <motion.div
+                initial="initial"
+                animate="animate"
+                variants={iconVariants(6)}
+                className="p-4">
+                <SiMysql className="text-7xl text-[#4479A1]" />
             </motion.div>
             
         </motion.div>
