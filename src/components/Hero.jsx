@@ -171,19 +171,21 @@ const Hero = () => {
                 strokeWidth="0.3"
                 strokeDasharray="20 80"
                 filter="url(#bannerGlow)"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0, strokeDashoffset: 0 }}
                 animate={
                   showBorder
-                    ? { strokeDashoffset: [0, -100], opacity: 1 }
+                    ? { strokeDashoffset: -100, opacity: 1 }
                     : { opacity: 0 }
                 }
                 transition={{
                   strokeDashoffset: {
-                    duration: 4,
-                    repeat: Infinity,
+                    duration: 2,   // 🔥 only 2 seconds
                     ease: "linear",
                   },
                   opacity: { duration: 0.4 },
+                }}
+                onAnimationComplete={() => {
+                  setShowBorder(false); // 🔥 stop & hide after animation
                 }}
               />
             </svg>

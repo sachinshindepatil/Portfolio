@@ -2,6 +2,8 @@ import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
+import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.webp";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2.5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Python (Django), PHP frameworks such as Laravel and CodeIgniter, and databases including MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -60,13 +62,13 @@ export const PROJECTS = [
   },
   {
     title: "Salasar Auction",
-    image: project1,
+    image: project5,
     description: "A role-based online auction system built with CodeIgniter 4 using MVC architecture. Features Admin, Vendor, and Bidder portals with secure access control, auction and product management, and real-time bidding functionality.",
       technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "CodeIgniter 4"],
   },
   {
     title: "OYA Auction",
-    image: project2,
+    image: project6,
     description: "A customizable, role-based online auction platform built with CodeIgniter 4, allowing businesses to create and manage their own auction systems. Features Admin, Vendor, and Bidder portals with auction creation, product listings, live bidding, bid tracking, and secure role-based access control.",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "CodeIgniter 4"],
   },
